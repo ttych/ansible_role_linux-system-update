@@ -1,0 +1,7 @@
+---
+- name: apt dist-upgrade
+  apt:
+    upgrade: yes
+    update_cache: yes
+    cache_valid_time: "{{ packages_cache_ttl }}"
+    autoremove: yes
